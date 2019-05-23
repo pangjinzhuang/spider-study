@@ -1,0 +1,25 @@
+import re
+
+
+# s1 = 'Total income is around $750000 ,pretty good income.'
+s3 = '<h1 href="https://www.baidu.com">Baidu</h1>'
+# s4 = "Is is the cost of of gasoline going up up"
+
+pattern = re.compile('>(.*)<')
+
+
+def main():
+    """
+    函数迭代计算
+    """
+    i = 1
+    while i < 1000:
+        i = i + 1
+        # print(pattern.findall(s3))
+        print(re.findall('>(.*)<', s3))
+    else:
+        print(i)
+
+
+if __name__ == '__main__':
+    main()
